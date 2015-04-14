@@ -49,4 +49,8 @@
         android:dependency="pref_key_enable_notifications"
         android:entries="@array/pref_repeat_alerts_entries"
         android:entryValues="@array/pref_repeat_alerts_values" />
+
+    <Preference android:key="pref_repeat_alerts_interval"
+                android:title="@string/preferences__repeat_alerts_interval"
+                android:dependency="pref_key_enable_notifications"/>
 </PreferenceScreen>

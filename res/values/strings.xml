@@ -34,6 +34,7 @@
 
     <!-- AppProtectionPreferenceFragment -->
     <string name="AppProtectionPreferenceFragment_minutes">%d minutes</string>
+    <string name="AppProtectionPreferenceFragment_seconds">%d seconds</string>
 
     <!-- DraftDatabase -->
     <string name="DraftDatabase_Draft_image_snippet">(image)</string>
@@ -529,6 +530,7 @@
     <string name="preferences__inthread_notifications">In-thread notifications</string>
     <string name="preferences__play_inthread_notifications">Play notification sound when viewing an active conversation.</string>
     <string name="preferences__repeat_alerts">Repeat alerts</string>
+    <string name="preferences__repeat_alerts_interval">Delay between repetitions</string>
     <string name="preferences__never">Never</string>
     <string name="preferences__one_time">One time</string>
     <string name="preferences__two_times">Two times</string>

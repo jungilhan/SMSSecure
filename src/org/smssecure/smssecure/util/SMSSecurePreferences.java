@@ -73,6 +73,7 @@ public class SMSSecurePreferences {
 
   private static final String PUSH_REGISTRATION_REMINDER_PREF  = "pref_push_registration_reminder";
   public  static final String REPEAT_ALERTS_PREF               = "pref_repeat_alerts";
+  public  static final String REPEAT_ALERTS_INTERVAL_PREF      = "pref_repeat_alerts_interval";
 
   public static boolean isWebsocketRegistered(Context context) {
     return getBooleanPreference(context, WEBSOCKET_REGISTERED_PREF, false);
@@ -97,6 +98,14 @@ public class SMSSecurePreferences {
 
   public static void setRepeatAlertsCount(Context context, int count) {
     setStringPreference(context, REPEAT_ALERTS_PREF, String.valueOf(count));
+  }
+
+  public static int getRepeatAlertsInterval(Context context) {
+    return getIntegerPreference(context, REPEAT_ALERTS_INTERVAL_PREF, 10);
+  }
+
+  public static void setRepeatAlertsInterval(Context context, int interval) {
+    setIntegerPrefrence(context, REPEAT_ALERTS_INTERVAL_PREF, interval);
   }
 
   public static boolean isSignedPreKeyRegistered(Context context) {
