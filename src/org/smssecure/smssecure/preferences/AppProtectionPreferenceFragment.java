@@ -92,7 +92,7 @@ public class AppProtectionPreferenceFragment extends PreferenceFragment {
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
-      int[]      attributes = {R.attr.app_protect_timeout_picker_color};
+      int[]      attributes = {R.attr.better_pickers_style};
       TypedArray hmsStyle   = getActivity().obtainStyledAttributes(attributes);
 
       new HmsPickerBuilder().setFragmentManager(getFragmentManager())
